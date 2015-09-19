@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Export Demo</title>
+		<script src="src/export.js"></script>
+		<script>
+			var jsonArray = [ { firstName: "Marvin", lastName: "Wooten", email: "risus.varius@ipsum.ca", phone: "895-0425", country: "United States" },  { firstName: "Damian", lastName: "Patterson", email: "Nunc.sed.orci@duiquis.org", phone: "1-261-380-7033", country: "Iran" },  { firstName: "Tiger", lastName: "Gilbert", email: "diam@etpedeNunc.co.uk", phone: "180-4798", country: "Anguilla" },  { firstName: "Emmanuel", lastName: "Mcintyre", email: "purus.Nullam.scelerisque@laoreetlectusquis.com", phone: "1-462-689-7643", country: "Afghanistan" },  { firstName: "Upton", lastName: "Chapman", email: "hendrerit@nequeetnunc.net", phone: "1-228-488-4099", country: "Turkmenistan" },  { firstName: "Gregory", lastName: "Bowers", email: "id@orcilacusvestibulum.co.uk", phone: "1-207-389-0333", country: "United States Minor Outlying Islands" },  { firstName: "Ralph", lastName: "Drake", email: "facilisis@imperdiet.co.uk", phone: "858-5034", country: "Sint Maarten" },  { firstName: "Elton", lastName: "Hardin", email: "nunc.sit@sollicitudinorcisem.ca", phone: "365-2293", country: "Isle of Man" },  { firstName: "Kamal", lastName: "Riggs", email: "nulla.In.tincidunt@lectus.net", phone: "225-8497", country: "Antigua and Barbuda" },  { firstName: "Ryan", lastName: "Henry", email: "nulla.magna.malesuada@ligulaNullam.ca", phone: "573-6001", country: "Senegal" } ];
+			
+			var jsonObject = { firstName: "Marvin", lastName: "Wooten", email: "risus.varius@ipsum.ca", phone: "895-0425", country: "United States" };
+			
+			var jsonString = '[ { "firstName": "Marvin", "lastName": "Wooten", "email": "risus.varius@ipsum.ca", "phone": "895-0425", "country": "Virgin Islands, United States" },  { "firstName": "Damian", "lastName": "Patterson", "email": "Nunc.sed.orci@duiquis.org", "phone": "1-261-380-7033", "country": "Iran" },  { "firstName": "Tiger", "lastName": "Gilbert", "email": "diam@etpedeNunc.co.uk", "phone": "180-4798", "country": "Anguilla" },  { "firstName": "Emmanuel", "lastName": "Mcintyre", "email": "purus.Nullam.scelerisque@laoreetlectusquis.com", "phone": "1-462-689-7643", "country": "Afghanistan" },  { "firstName": "Upton", "lastName": "Chapman", "email": "hendrerit@nequeetnunc.net", "phone": "1-228-488-4099", "country": "Turkmenistan" },  { "firstName": "Gregory", "lastName": "Bowers", "email": "id@orcilacusvestibulum.co.uk", "phone": "1-207-389-0333", "country": "United States Minor Outlying Islands" },  { "firstName": "Ralph", "lastName": "Drake", "email": "facilisis@imperdiet.co.uk", "phone": "858-5034", "country": "Sint Maarten" },  { "firstName": "Elton", "lastName": "Hardin", "email": "nunc.sit@sollicitudinorcisem.ca", "phone": "365-2293", "country": "Isle of Man" },  { "firstName": "Kamal", "lastName": "Riggs", "email": "nulla.In.tincidunt@lectus.net", "phone": "225-8497", "country": "Antigua and Barbuda" },  { "firstName": "Ryan", "lastName": "Henry", "email": "nulla.magna.malesuada@ligulaNullam.ca", "phone": "573-6001", "country": "Senegal" } ]';
+			
+			var exportToCSV = new Export();
+			function exportJSONArray(e) {
+				exportToCSV.exportJSONtoCSV(jsonArray);
+			}
+			function exportJSONObject(e) {
+				exportToCSV.exportJSONtoCSV(jsonObject);
+			}
+			function exportJSONString(e) {
+				exportToCSV.exportJSONtoCSV(jsonString);
+			}
+		</script>
+	</head>
+	<body>
+		<button id="exportJSON" onclick="exportJSONArray()">Export JSON Array to CSV</button><br/>
+		<button id="exportJSON" onclick="exportJSONObject()">Export JSON Object to CSV</button><br/>
+		<button id="exportJSON" onclick="exportJSONString()">Export JSON String to CSV</button><br/>
+	</body>
+</html>
