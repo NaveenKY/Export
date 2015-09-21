@@ -4,9 +4,9 @@ Library that allows the client to export JSON to CSV using Javascript
 
 
 Below are the few feature supported by Export:
-- Export JSON Array to CSV
-- Export JSON Object to CSV
-- Export JSON String to CSV
+- Export JSON Array to CSV/XLS
+- Export JSON Object to CSV/XLS
+- Export JSON String to CSV/XLS
 
 
 ###  Coming Soon
