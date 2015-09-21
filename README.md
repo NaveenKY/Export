@@ -1,6 +1,6 @@
 
-# <a href="https://github.com/NaveenKY/Export">Export</a> : Export JSON to CSV
-Library that allows the client to export JSON to CSV using Javascript
+# <a href="https://github.com/NaveenKY/Export">Export</a> : Export JSON to CSV/XLS
+Library that allows the client to export JSON Data to CSV/XLS using Javascript
 
 
 Below are the few feature supported by Export:
@@ -11,4 +11,4 @@ Below are the few feature supported by Export:
 
 ###  Coming Soon
 - Exporting with Column Headers
-- Allow other kind of data to be exported to CSV(for eg. XML, Backkbone Model, Collection, etc.)
+- Allow other kind of data to be exported to CSV/XLS(for eg. XML, Backkbone Model, Collection, etc.)
